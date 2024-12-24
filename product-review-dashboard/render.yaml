@@ -3,8 +3,8 @@ services:
     name: product-review-dashboard
     env: python
     buildCommand: |
-      pip install -r requirements.txt
-      python -m spacy download en_core_web_sm
+      pip install --no-cache-dir -r requirements.txt
+      python -m spacy download --no-cache-dir en_core_web_sm
     startCommand: gunicorn app:server
     envVars:
       - key: PYTHON_VERSION
