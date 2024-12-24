@@ -1,17 +1,26 @@
-### Project Title
-
-**Author**
+### Product Review Analysis & Summarization System
 
 #### Executive summary
 
 #### Rationale
-Why should anyone care about this question?
+With hundreds or thousands of reviews per product, it's nearly impossible for businesses or customers to read everything. Important feedback can get lost, and businesses can miss opportunities to improve their products. 
+
+A system that can successfully identify what features customers talk about most, how they feel about them, and provide easy-to-understand summaries can help both businesses and customers make better decisions.
 
 #### Research Question
-What are you trying to answer?
+Can we develop an effective system to automatically analyze large volumes of product reviews to:
+1. Identify key product features customers talk about most
+2. Determine if feedback about these features is positive or negative
+3. Create easy-to-understand summaries that help both businesses and customers
 
 #### Data Sources
-What data will you use to answer you question?
+The dataset used in this project is Amazon Product Reviews sourced from Kaggle and can be accessed by clicking [here](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews/data).
+
+It contains over 568,000 consumer reviews for various products, including:
+- Customer ratings (1-5 stars)
+- Written review text
+- Helpfulness votes from other customers
+- Product identifiers and other metadata
 
 #### Methodology
 What methods are you using to answer the question?
