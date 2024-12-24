@@ -3,15 +3,9 @@ services:
     name: product-review-dashboard
     env: python
     buildCommand: |
-      pip install --no-cache-dir -r requirements.txt
-      python -m spacy download --no-cache-dir en_core_web_sm
+      pip install -r requirements.txt
+      python -m spacy download en_core_web_sm
     startCommand: gunicorn app:server
     envVars:
       - key: PYTHON_VERSION
         value: 3.9
-      - key: MAX_WORKERS 
-        value: 1
-      - key: MAX_THREADS
-        value: 4
-      - key: WEB_CONCURRENCY
-        value: 2
