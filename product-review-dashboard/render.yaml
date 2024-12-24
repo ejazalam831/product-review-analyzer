@@ -9,6 +9,8 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.9
+      - key: MAX_WORKERS 
+        value: 1
       - key: MAX_THREADS
         value: 4
       - key: WEB_CONCURRENCY
