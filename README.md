@@ -1,19 +1,19 @@
-### Product Review Analysis & Summarization System
+## Product Review Analysis & Summarization System
 
-#### Executive summary
+### Executive summary
 
-#### Rationale
+### Rationale
 With hundreds or thousands of reviews per product, it's nearly impossible for businesses or customers to read everything. Important feedback can get lost, and businesses can miss opportunities to improve their products. 
 
 A system that can successfully identify what features customers talk about most, how they feel about them, and provide easy-to-understand summaries can help both businesses and customers make better decisions.
 
-#### Research Question
+### Research Question
 Can we develop an effective system to automatically analyze large volumes of product reviews to:
 1. Identify key product features customers talk about most
 2. Determine if feedback about these features is positive or negative
 3. Create easy-to-understand summaries that help both businesses and customers
 
-#### Data Sources
+### Data Sources
 The dataset used in this project is Amazon Product Reviews sourced from Kaggle and can be accessed by clicking [here](https://www.kaggle.com/datasets/arhamrumi/amazon-product-reviews/data).
 
 It contains over 568,000 consumer reviews for various products, including:
@@ -22,10 +22,60 @@ It contains over 568,000 consumer reviews for various products, including:
 - Helpfulness votes from other customers
 - Product identifiers and other metadata
 
-#### Methodology
-What methods are you using to answer the question?
+### Methodology
+The approach involved four comprehensive phases of development and analysis:
+1. Data Cleaning & Preprocessing
 
-#### Results
+   a) Data Cleaning Process
+   - After performing initial quality assessment and structure validation, selected relevant columns for analysis:
+     - ProductId: For product identification
+     - Text: Review content
+     - Score: Rating (1-5)
+     - Helpfulness Votes: Review usefulness
+   - Checked for missing values and removed 565 duplicate reviews
+   - Implemented two-sided filtering approach:
+     - Minimum threshold: Removed products with less than 2 reviews
+     - Maximum threshold: Excluded products above 95th percentile
+
+   b) Text Preprocessing Pipeline
+   - Implemented comprehensive text cleaning:
+     - Converted all text to lowercase for consistency
+     - Expanded contractions (e.g., "don't" to "do not") for better analysis
+     - Removed special characters, irrelevant symbols and stop words
+     - Tokenized text into individual words
+     - Applied lemmatization to standardize word forms
+
+  
+    This resulted in a filtered dataset of 40,289 high-quality reviews by grouping reviews by product for comprehensive analysis to maintain text meaning while removing noise.
+
+2. Feature Engineering & Representation
+   
+   a) Approach
+   - Developed a comprehensive feature engineering pipeline combining three types of features:
+     - TF-IDF vectorization (5000 features) to capture important terms
+     - Word2Vec embeddings (100 features) for semantic relationships
+     - Metadata features (3 features) from review statistics
+
+   b) Feature Processing
+   - TF-IDF Implementation:
+     - Applied L2 normalization to handle varying review lengths
+     - Included unigram and bigram support
+     - Set maximum features to 5000 for computational efficiency
+
+   - Word2Vec Configuration:
+     - Trained on review text with context window of 5 words
+     - Set minimum word frequency threshold of 2
+     - Generated 100-dimensional word vectors
+  
+   c) Combined Feature Representation:
+   - Merged all feature types into unified representation
+   - Applied feature standardization
+   - Created final feature matrix of 5,103 dimensions
+
+
+    This process created a rich feature set capturing both textual content and review metadata for subsequent model training and analysis.
+
+### Results
 1. Model Performance
 
 - Best Overall Accuracy: 89.91% (LinearSVC)
