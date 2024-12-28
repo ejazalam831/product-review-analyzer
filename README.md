@@ -50,13 +50,12 @@ The approach involved four comprehensive phases of development and analysis:
 
 2. Feature Engineering & Representation
    
-   a) Approach
-   - Developed a comprehensive feature engineering pipeline combining three types of features:
+   Developed a comprehensive feature engineering pipeline combining three types of features:
      - TF-IDF vectorization (5000 features) to capture important terms
      - Word2Vec embeddings (100 features) for semantic relationships
      - Metadata features (3 features) from review statistics
 
-   b) Feature Processing
+   a) Feature Processing
    - TF-IDF Implementation:
      - Applied L2 normalization to handle varying review lengths
      - Included unigram and bigram support
@@ -67,7 +66,7 @@ The approach involved four comprehensive phases of development and analysis:
      - Set minimum word frequency threshold of 2
      - Generated 100-dimensional word vectors
   
-   c) Combined Feature Representation:
+   b) Combined Feature Representation
    - Merged all feature types into unified representation
    - Applied feature standardization
    - Created final feature matrix of 5,103 dimensions
@@ -75,6 +74,37 @@ The approach involved four comprehensive phases of development and analysis:
 
     This process created a rich feature set capturing both textual content and review metadata for subsequent model training and analysis.
 
+3. Model Development & Evaluation
+
+   a) Model Selection & Implementation
+   - Implemented three different machine learning models:
+     - Stochastic Gradient Descent (SGD): For efficient processing of large-scale text data
+     - Linear Support Vector Classification: For handling high-dimensional feature space
+     - Multi-Layer Perceptron (MLP): For capturing complex non-linear patterns
+
+   b) Baseline Model Development
+   - Implemented comprehensive evaluation framework based on multiple criteria:
+     - Overall accuracy and classification performance
+     - Training time and computational efficiency
+     - Class-wise precision, recall, and F1-scores
+   - Established baseline performance with default parameters
+    
+   c) Model Optimization
+   - Implemented hyperparameter optimization using HalvingGridSearchCV
+   - Addressed class imbalance through:
+     - F1-macro scoring implementation
+     - Balanced class weights
+     - Stratified sampling
+   - Performed cross-validation for robust performance estimation
+  
+   d) Model Optimization
+   - Implemented hyperparameter optimization using HalvingGridSearchCV
+   - Addressed class imbalance through:
+     - F1-macro scoring implementation
+     - Balanced class weights
+     - Stratified sampling
+   - Performed cross-validation for robust performance estimation
+   - 
 ### Results
 1. Model Performance
 
