@@ -9,14 +9,14 @@ Successfully developed and implemented a comprehensive system to automatically a
 
 **Generating Insights:** Created clear, actionable summaries that highlight both strengths and areas for improvement in products, with detailed metrics on customer satisfaction.
 
-Key Achievements:
+*Key Achievements:*
 
 - Successfully cleaned and processed over 568,454 reviews, implementing robust filtering and preprocessing techniques to ensure data quality
 - Achieved 93.41% accuracy in sentiment classification using an optimized LinearSVC model
 - Identified and ranked key product features using multiple feature extraction methods
-- Created an intuitive visualization system for easy interpretation of results
+- Created an intuitive dashboard for easy interpretation of results
 
-Business Benefits:
+*Business Benefits:*
 
 **1. Time Efficiency:** Automated analysis of thousands of reviews in minutes
 
@@ -50,7 +50,7 @@ It contains over 568,000 consumer reviews for various products, including:
 
 ### Methodology
 The approach involved four comprehensive phases of development and analysis, each building upon the previous phase to create a comprehensive review analysis system:
-1. Data Cleaning & Preprocessing
+1. **Data Cleaning & Preprocessing**
 
    a) Data Cleaning Process
    - After performing initial quality assessment and structure validation, selected relevant columns for analysis:
@@ -77,7 +77,7 @@ The approach involved four comprehensive phases of development and analysis, eac
    
    With clean, standardized data in place, next focus was on converting the text reviews into a format that machines could understand and analyze effectively.
 
-2. Feature Engineering & Representation
+2. **Feature Engineering & Representation**
    
    Developed a comprehensive feature engineering pipeline combining three types of features:
      - TF-IDF vectorization (5000 features) to capture important terms
@@ -103,7 +103,7 @@ The approach involved four comprehensive phases of development and analysis, eac
 
     Having created a rich feature set capturing both textual content and review metadata, then developed and tested several machine learning models to effectively process these features and generate insights.
 
-3. Model Development & Evaluation
+3. **Model Development & Evaluation**
 
    a) Model Selection & Implementation
    - Implemented three different machine learning models:
@@ -138,7 +138,7 @@ The approach involved four comprehensive phases of development and analysis, eac
 
    While our models showed strong performance in classifying reviews, we needed to extract specific insights about product features and customer sentiment. This led to our final phase of detailed feature analysis.
    
-4. Feature Extraction & Analysis
+4. **Feature Extraction & Analysis**
 
    a) Feature Extraction Pipeline
    - Implemented multiple extraction methods:
@@ -162,35 +162,48 @@ The approach involved four comprehensive phases of development and analysis, eac
    - Created sentiment distribution profiles
   
    d) Visualization & Reporting
-   - Developed interactive visualization components for dashboard:
+   - Developed interactive visualization components for dashboard implementation:
      - Key feature importance plots
      - Sentiment distribution charts
      - Generated overall product summary metrics for dashboard
 
 ### Results
-1. Model Performance
+1. **Key Findings**
+   - Successfully identified and ranked key product features that matter most to customers
+   - Generated detailed sentiment analysis for specific product features to identify positive and negative aspects of products
+   - Created concise product summaries combining both feature importance and customer sentiment
+   - Developed efficient processing pipeline reducing analysis time from days to minutes
 
-- Best Overall Accuracy: 89.91% (LinearSVC)
-- Best Minority Class Handling: MLP (F1-score: 0.64)
-- Most Efficient: SGD Classifier (79.16s training time)
-
-
-2. Key Findings
-
-- Successfully handled class imbalance through balanced weights
-- Achieved robust feature extraction using combined TF-IDF and Word2Vec
-- Demonstrated effective trade-off between accuracy and processing time
-- Reliable performance across different product categories
+2. **Model Performance**
+   - SGD: Good balance of training time (665s) and accuracy (89.94%)
+   - LinearSVC: Highest accuracy (93.41%) but at the cost of class imbalance and longer training time (2412s)
+   - MLP: Balanced performance with 88.91% accuracy, moderate training time (920s) and best overall balance across classes (macro avg f1-score: 0.78)
+   - Model Comparison:
 
 
-#### Next steps
+      | Model      | Train Time (s) | Test Accuracy | Best CV Score |
+      |------------|----------------|---------------|------------|
+      | SGD        | 665.39         | 0.8994        | 0.4410     |
+      | LinearSVC  | 2412.56        | 0.9341        | 0.6696     |
+      | MLP        | 919.99         | 0.8891        | 0.4382     |
+
+  
+3. **Visualization & Reporting**
+   - Developed interactive dashboard showing:
+      - Key product features and their importance
+      - Sentiment distribution across reviews
+      - Feature-specific sentiment analysis
+      - Overall product performance metrics
+
+
+### Next steps
 What suggestions do you have for next steps?
 
-#### Outline of project
+### Outline of project
 
 - [Link to notebook 1](https://github.com/ejazalam831/product-review-analyzer/blob/main/01_data_cleaning_and_prep.ipynb)
 - [Link to notebook 2](https://github.com/ejazalam831/product-review-analyzer/blob/main/02_Feature_Engineering_Implementation.ipynb)
 - [Link to notebook 3](https://github.com/ejazalam831/product-review-analyzer/blob/main/03_model_implement_and_eval.ipynb)
 
 
-##### Contact and Further Information
+### Contact and Further Information
