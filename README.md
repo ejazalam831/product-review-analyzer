@@ -189,21 +189,25 @@ The approach involved four comprehensive phases of development and analysis, eac
 
   
 3. **Visualization & Reporting**
-   - Developed interactive dashboard showing:
+   - Developed interactive [dashboard](https://github.com/ejazalam831/product-review-analyzer/tree/main/product-review-dashboard) showing:
       - Key product features and their importance
       - Sentiment distribution across reviews
       - Feature-specific sentiment analysis
       - Overall product performance metrics
 
 
-### Next steps
-What suggestions do you have for next steps?
+### Next Steps
+1. Further optimize model performance for minority classes
+2. Reduce LinearSVC training time while maintaining accuracy
+3. Implement ensemble methods to combine model strengths
+4. Improve feature extraction accuracy through advanced NLP techniques
 
-### Outline of project
+### Project Structure
 
-- [Link to notebook 1](https://github.com/ejazalam831/product-review-analyzer/blob/main/01_data_cleaning_and_prep.ipynb)
-- [Link to notebook 2](https://github.com/ejazalam831/product-review-analyzer/blob/main/02_Feature_Engineering_Implementation.ipynb)
-- [Link to notebook 3](https://github.com/ejazalam831/product-review-analyzer/blob/main/03_model_implement_and_eval.ipynb)
+- [Data Cleaning & Preprocessing Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/01_data_cleaning_and_prep.ipynb)
+- [Feature Engineering Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/02_Feature_Engineering_Implementation.ipynb)
+- [Model Implementaion & Evaluation Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/03_model_implement_and_eval.ipynb)
+- [Feature Extraction & Analysis Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/03_model_implement_and_eval.ipynb)
 
 
 ### Contact and Further Information
