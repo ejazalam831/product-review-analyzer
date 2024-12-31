@@ -2,8 +2,7 @@
 
 Interactive dashboard for analyzing product reviews with sentiment analysis and feature extraction.
 
-## Live Demo
-Access the dashboard at: [render-url]
+
 
 ## Features
 - Real-time product review analysis
@@ -40,11 +39,5 @@ python app.py
 
 Access local dashboard at `http://localhost:5000`
 
-## Tech Stack
-- Flask
-- Dash
-- Plotly
-- spaCy
-- NLTK
-- Sentence Transformers
-- Bootstrap
+## Live Demo
+Access the dashboard at: [url]
