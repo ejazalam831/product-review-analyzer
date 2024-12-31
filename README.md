@@ -205,9 +205,9 @@ The approach involved four comprehensive phases of development and analysis, eac
 ### Project Structure
 
 - [Data Cleaning & Preprocessing Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/notebooks/01_data_cleaning_and_prep.ipynb)
-- [Feature Engineering Notebook]()
-- [Model Implementaion & Evaluation Notebook]()
-- [Feature Extraction & Analysis Notebook]()
+- [Feature Engineering Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/notebooks/02_feature_engineering.ipynb)
+- [Model Implementaion & Evaluation Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/notebooks/03_model_implement_and_eval.ipynb)
+- [Feature Extraction & Analysis Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/notebooks/04_feature_extraction_and_analysis.ipynb)
 
 
 ### Contact and Further Information
