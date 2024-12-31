@@ -23,7 +23,7 @@ It contains over 568,000 consumer reviews for various products, including:
 - Product identifiers and other metadata
 
 ### Methodology
-The approach involved four comprehensive phases of development and analysis:
+The approach involved four comprehensive phases of development and analysis, each building upon the previous phase to create a comprehensive review analysis system:
 1. Data Cleaning & Preprocessing
 
    a) Data Cleaning Process
@@ -33,6 +33,7 @@ The approach involved four comprehensive phases of development and analysis:
      - Score: Rating (1-5)
      - Helpfulness Votes: Review usefulness
    - Checked for missing values and removed 565 duplicate reviews
+   - Grouped reviews by product for comprehensive analysis
    - Implemented two-sided filtering approach:
      - Minimum threshold: Removed products with less than 2 reviews
      - Maximum threshold: Excluded products above 95th percentile
@@ -46,7 +47,9 @@ The approach involved four comprehensive phases of development and analysis:
      - Applied lemmatization to standardize word forms
 
   
-    This resulted in a filtered dataset of 40,289 high-quality reviews by grouping reviews by product for comprehensive analysis to maintain text meaning while removing noise.
+    This resulted in a filtered dataset of 40,289 high-quality product reviews to maintain text meaning while removing noise.
+   
+   With clean, standardized data in place, next focus was on converting the text reviews into a format that machines could understand and analyze effectively.
 
 2. Feature Engineering & Representation
    
@@ -72,7 +75,7 @@ The approach involved four comprehensive phases of development and analysis:
    - Created final feature matrix of 5,103 dimensions
 
 
-    This process created a rich feature set capturing both textual content and review metadata for subsequent model training and analysis.
+    Having created a rich feature set capturing both textual content and review metadata, then developed and tested several machine learning models to effectively process these features and generate insights.
 
 3. Model Development & Evaluation
 
@@ -97,14 +100,47 @@ The approach involved four comprehensive phases of development and analysis:
      - Stratified sampling
    - Performed cross-validation for robust performance estimation
   
-   d) Model Optimization
-   - Implemented hyperparameter optimization using HalvingGridSearchCV
-   - Addressed class imbalance through:
-     - F1-macro scoring implementation
-     - Balanced class weights
-     - Stratified sampling
-   - Performed cross-validation for robust performance estimation
-   - 
+   d) Performance Results
+   - Base Models:
+     - SGD: 88.56% accuracy (375.60s training)
+     - LinearSVC: 89.85% accuracy (1852.29s training)
+     - MLP: 84.45% accuracy (266.34s training)
+   - Improved Models:
+     - SGD: 89.94% accuracy with optimized parameters
+     - LinearSVC: 93.41% accuracy with balanced class weights
+     - MLP: 88.91% accuracy with tuned architecture
+
+   While our models showed strong performance in classifying reviews, we needed to extract specific insights about product features and customer sentiment. This led to our final phase of detailed feature analysis.
+   
+4. Feature Extraction & Analysis
+
+   a) Feature Extraction Pipeline
+   - Implemented multiple extraction methods:
+     - Topic modeling (LDA) to identify key themes and patterns
+     - KeyBERT for semantic keyword extraction
+     - spaCy for noun phrase identification and extraction
+     - VADER for sentiment analysis
+
+   b) Feature Processing & Integration
+   - Consolidated features from different extraction methods
+   - Applied deduplication and similarity grouping
+   - Created unified feature representation including:
+     - Feature frequency metrics
+     - Sentiment scores
+     - Feature importance rankings
+   - Generated product-level feature summaries
+    
+   c) Sentiment Analysis
+   - Implemented sentence-level sentiment analysis
+   - Calculated feature-specific sentiment scores
+   - Created sentiment distribution profiles
+  
+   d) Visualization & Reporting
+   - Developed interactive visualization components for dashboard:
+     - Key feature importance plots
+     - Sentiment distribution charts
+     - Generated overall product summary metrics for dashboard
+
 ### Results
 1. Model Performance
 
