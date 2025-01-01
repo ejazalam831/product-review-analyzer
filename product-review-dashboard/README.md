@@ -2,6 +2,7 @@
 
 Interactive dashboard for analyzing product reviews with sentiment analysis and feature extraction.
 
+![Product Analysis](images/sample_product_analysis.png "Product Analysis Overview")
 
 
 ## Features
