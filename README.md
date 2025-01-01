@@ -197,17 +197,22 @@ The approach involved four comprehensive phases of development and analysis, eac
 
 
 ### Next Steps
-1. Further optimize model performance for minority classes
-2. Reduce LinearSVC training time while maintaining accuracy
-3. Implement ensemble methods to combine model strengths
-4. Improve feature extraction accuracy through advanced NLP techniques
+1. **System Enhancement**
+   - Improve feature extraction accuracy through advanced NLP techniques
+   - Develop more sophisticated summarization techniques
+2. **Model Improvements**
+   - Further optimize model performance for minority classes
+   - Reduce LinearSVC training time while maintaining accuracy
+   - Implement ensemble methods to combine model strengths
+
 
 ### Project Structure
 
-- [Data Cleaning & Preprocessing Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/01_data_cleaning_and_prep.ipynb)
-- [Feature Engineering Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/02_Feature_Engineering_Implementation.ipynb)
-- [Model Implementaion & Evaluation Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/03_model_implement_and_eval.ipynb)
-- [Feature Extraction & Analysis Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/03_model_implement_and_eval.ipynb)
+- [Data Cleaning & Preprocessing Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/notebooks/01_data_cleaning_and_prep.ipynb)
+- [Feature Engineering Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/notebooks/02_feature_engineering.ipynb)
+- [Model Implementaion & Evaluation Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/notebooks/03_model_implement_and_eval.ipynb)
+- [Feature Extraction & Analysis Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/notebooks/04_feature_extraction_and_analysis.ipynb)
 
 
-### Contact and Further Information
+### Contact Information
+For more details, please contact [Ejaz Alam](ejazalam@umich.edu)
