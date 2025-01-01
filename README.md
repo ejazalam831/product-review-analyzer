@@ -211,5 +211,5 @@ The approach involved four comprehensive phases of development and analysis, eac
 - [Feature Extraction & Analysis Notebook](https://github.com/ejazalam831/product-review-analyzer/blob/main/notebooks/04_feature_extraction_and_analysis.ipynb)
 
 
-### Contact and Further Information
+### Contact Information
 For more details, please contact [Ejaz Alam](ejazalam@umich.edu)
