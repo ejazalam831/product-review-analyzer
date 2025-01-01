@@ -11,7 +11,7 @@ Successfully developed and implemented a comprehensive system to automatically a
 
 *Key Achievements:*
 
-- Successfully cleaned and processed over 568,454 reviews, implementing robust filtering and preprocessing techniques to ensure data quality
+- Successfully cleaned and processed over 568,000 reviews, implementing robust filtering and preprocessing techniques to ensure data quality
 - Achieved 93.41% accuracy in sentiment classification using an optimized LinearSVC model
 - Identified and ranked key product features using multiple feature extraction methods
 - Created an intuitive dashboard for easy interpretation of results
