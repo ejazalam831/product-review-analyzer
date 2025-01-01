@@ -196,12 +196,15 @@ The approach involved four comprehensive phases of development and analysis, eac
       - Overall product performance metrics
 
 
-### Future Improvements
-1. Further optimize model performance for minority classes
-2. Reduce LinearSVC training time while maintaining accuracy
-3. Implement ensemble methods to combine model strengths
-4. Improve feature extraction accuracy through advanced NLP techniques
-5. Develop more sophisticated summarization techniques
+### Next Steps
+1. **System Enhancement**
+   - Improve feature extraction accuracy through advanced NLP techniques
+   - Develop more sophisticated summarization techniques
+2. **Model Improvements**
+   - Further optimize model performance for minority classes
+   - Reduce LinearSVC training time while maintaining accuracy
+   - Implement ensemble methods to combine model strengths
+
 
 ### Project Structure
 
