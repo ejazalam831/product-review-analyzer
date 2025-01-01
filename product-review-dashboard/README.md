@@ -31,7 +31,7 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
-4. Place your cleaned_reviews.csv.gz in the data/ directory
+4. Place cleaned_reviews.csv.gz in the data/ directory
 
 5. Run the app
 ```bash
