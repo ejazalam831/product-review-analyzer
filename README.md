@@ -196,11 +196,12 @@ The approach involved four comprehensive phases of development and analysis, eac
       - Overall product performance metrics
 
 
-### Next Steps
+### Future Improvements
 1. Further optimize model performance for minority classes
 2. Reduce LinearSVC training time while maintaining accuracy
 3. Implement ensemble methods to combine model strengths
 4. Improve feature extraction accuracy through advanced NLP techniques
+5. Develop more sophisticated summarization techniques
 
 ### Project Structure
 
@@ -211,3 +212,4 @@ The approach involved four comprehensive phases of development and analysis, eac
 
 
 ### Contact and Further Information
+For more details, please contact [Ejaz Alam](ejazalam@umich.edu)
